@@ -7,7 +7,7 @@
 1. Generate a different SSH key for each hosted server (e.g. github.com vs GitHub enterprise)
 
     ```shell
-    ssh-keygen ~/.ssh/id_${HOST}
+    ssh-keygen -i ~/.ssh/id_${HOST}
     ```
 
 2. Use a significantly complex passphrase for the private key. It is recommeded that you generate the passphrase from a password manager and store the generated key and the passphrase in the password manager.
