@@ -28,7 +28,7 @@
 
     ```shell
     eval "$(ssh-agent -s)"
-    ssh-add -K /path/to/id/file
+    ssh-add --apple-use-keychain /path/to/id/file
     ```
 
 **Note:** It is a good idea to rotate the keys and/or the passphrase occationally. There is nothing (yet) that will enforce this in GitHub so you will need to add a reminder to rotate the SSH keys.
